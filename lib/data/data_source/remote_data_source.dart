@@ -18,7 +18,6 @@ class RemoteDataSource implements BaseRemoteDataSource{
     }
     return  WeatherModel.fromJson(response.data);
 
-
   }
 
 

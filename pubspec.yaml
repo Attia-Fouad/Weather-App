@@ -37,7 +37,8 @@ dependencies:
   dio: ^5.1.1
   weather_icons: ^3.0.0
   intl: ^0.18.0
-  location: ^4.4.0
+  #location: ^4.3.0
+  geolocator: ^9.0.2
   liquid_pull_to_refresh: ^3.0.1
   flutter_bloc: ^8.1.1
   bloc: ^8.1.0

@@ -12,8 +12,8 @@ class WeatherScreen extends StatelessWidget {
   const WeatherScreen({Key? key}) : super(key: key);
 
   Future<void> refresh(BuildContext context) async {
-    BlocProvider.of<AppCubit>(context).getCurrentLocation();
-    return Future.delayed(const Duration(seconds: 1));
+    return BlocProvider.of<AppCubit>(context).getCurrentLocation();
+    //return Future.delayed(const Duration(seconds: 1));
   }
 
   @override

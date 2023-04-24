@@ -8,6 +8,7 @@ abstract class BaseRemoteDataSource{
 
 }
 int? id;
+int? ide;
 // just for test git
 class RemoteDataSource implements BaseRemoteDataSource{
   @override

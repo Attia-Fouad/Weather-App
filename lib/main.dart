@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app1/presentation/screens/weather_screen.dart';
+import 'package:weather_app1/presentation/screens/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         primarySwatch: Colors.blue,
       ),
-      home: const WeatherScreen(),
+      home:  HomeScreen(),
     );
   }
 }

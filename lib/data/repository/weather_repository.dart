@@ -8,7 +8,7 @@ class WeatherRepository implements BaseWeatherRepository{
   WeatherRepository(this.baseRemoteDataSource);
 
   @override
-  Future<Weather> getWeatherByLatLong(double lat, double long, String language) async{
+  Future<Weather> getWeatherByLatLong(dynamic lat, dynamic long, String language) async{
     return (await baseRemoteDataSource.getWeatherByLatLong(lat, long, language))!;
   }
 

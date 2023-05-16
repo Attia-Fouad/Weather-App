@@ -6,7 +6,7 @@ class GetWeatherByLatLon {
   final BaseWeatherRepository repository;
 
   GetWeatherByLatLon(this.repository);
-  Future<Weather> execute(double lat,double long,String language)async{
+  Future<Weather> execute(dynamic lat,dynamic long,String language)async{
     return await repository.getWeatherByLatLong(lat, long, language);
 
   }

@@ -75,14 +75,14 @@ class AppCubit extends Cubit<AppStates> {
     await Geolocator.getCurrentPosition().then((value) async {
       await getWeatherData(value.latitude, value.longitude, 'en');
     }).catchError((error) {
-      print(error.message);
+      print(error.toString());
       print('error occurred while getting weather from device');
     });
   }
 
   Weather? weather;
 
-  Future<void> getWeatherData(double lat, double long, String language) async {
+  Future<void> getWeatherData(dynamic lat, dynamic long, String language) async {
     emit(GetWeatherLoadingState());
     BaseRemoteDataSource baseRemoteDataSource = RemoteDataSource();
     BaseWeatherRepository baseWeatherRepository =
